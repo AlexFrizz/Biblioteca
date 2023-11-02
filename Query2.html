@@ -1,0 +1,33 @@
+<!--
+    Visualizzazione di tutti i libri di un determinato autore, eventualmente suddivisi per  anno di pubblicazione.
+-->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Visualizzazione libri</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		body{
+			max-width: 1200px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Visualizzazione libri di un autore</h1>
+		<label>In questa pagina vengono visualizzati tutti i libri di un autore<br>suddivisi per anno di pubblicazione<br><br>
+			<mark>N.B.</mark>Per effettuare la ricerca è necessario inserire il codice dell'autore nel campo di ricerca.</label>
+		<br><br>
+		<form action="Query2.php" method="POST">
+		<fieldset style="width: 30%;">
+			<label>Codice autore:</label>
+			<input type="text" name="codice">
+		</fieldset>
+		<input type="submit" value="Ricerca">
+	</form>
+	</center>
+</body>
+</html>
+
