@@ -1,0 +1,71 @@
+<!--
+    Ricerca di un libro inserendo il titolo (anche parziale) - 
+    nel caso in cui nessun parametro venga specificato deve essere presentata la lista completa dei libri 
+    comprese le informazioni sintetiche del libro: titolo, isbn, in che succursale sono, ecc…
+-->
+<!-- 
+
+    <!doctype html>
+    <html lang="en" data-bs-theme="dark">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <title>Bootstrap demo</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            
+        </head>
+        
+        <body style="font-family: system-ui;">
+            <center>
+                <h1>Visualizzazione dati libro</h1>
+                <p><small>In questa pagina vengono visualizzati i dati di un libero tramite l'inserimento del titolo.<br>
+                    I parametri possono essere parziali.<br>
+                    <mark>N.B.</mark> Nel caso in cui non venga inserito nessu parametro verrà visualizzata la lista completa </small></p>
+                    <br><br>
+                    <form action="Query1.php" method="POST">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="titolo">
+                            <label for="floatingInput">Titolo:</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </center>
+            </body>
+            </html>
+            
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Ricerca Libro</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		body{
+			max-width: 1200px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Visualizzazione dati libro</h1>
+            <p><small>In questa pagina vengono visualizzati i dati di un libro tramite l'inserimento del titolo.<br>
+                   I parametri possono essere parziali.<br>
+                   <mark>N.B.</mark> Nel caso in cui non venga inserito nessu parametro verrà visualizzata la lista completa </small></p>
+		<br><br>
+		<form action="Query1.php" method="POST">
+		<fieldset style="width: 30%;">
+			<label>Titolo:</label>
+			<input type="text" name="titolo">
+		</fieldset>
+		<input type="submit" value="Ricerca">
+	</form>
+	</center>
+</body>
+</html>
+

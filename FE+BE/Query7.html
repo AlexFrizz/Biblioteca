@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Ricerca prestiti</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		body{
+			max-width: 1200px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Ricerca prestiti tramite le date</h1>
+            <p><small>In questa pagina vengono visualizzati i  prestiti in un range temporale tramite l'inserimento delle date dei prestiti.<br>
+                   I parametri non possono essere parziali.<br>
+                   <mark>N.B.</mark> Nel caso in cui non venga inserito nessu parametro verrà visualizzata la lista completa dei prestiti ancora in corso </small></p>
+		<br><br>
+		<form action="Query7.php" method="POST">
+		<fieldset style="width: 30%;">
+			<label>Data uscita:</label>
+			<input type="date" name="data_uscita"><br>
+			<label>data restituzione</label>
+			<input type="date" name="data_restituzione"><br>
+		</fieldset>
+		<input type="submit" value="Ricerca">
+	</form>	
+	</center>
+</body>
+</html>

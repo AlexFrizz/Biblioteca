@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<title>Visualizzazione autori</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		body{
+			max-width: 1200px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Visualizzazione dei dati degli autori</h1>
+		<label>Ricerca degli autori inserendo uno o più parametri<br>
+			I parametri inseriti non devono per forza essere completi, possono anche essere parziali.<br>
+			<mark>N.B.</mark> Nel caso in cui non venga inserito nessun parametro la richiesta non verrà considerata valida</label>
+		<br><br>
+		<form action="Query3.php" method="POST">
+		<fieldset style="width: 30%;">
+            <label>Cognome autore:</label>
+			<input type="text" name="cognome">
+			<label>Data di nascita:</label>
+			<input type="text" name="data_nascita">
+			<label>Luogo di nascita:</label>
+			<input type="text" name="luogo_nascita">
+		</fieldset>
+		<input type="submit" value="Ricerca">
+	    </form>
+	</center>
+</body>
+</html>
